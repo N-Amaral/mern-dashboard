@@ -6,7 +6,7 @@ import React from "react";
 import FlexBetween from "./FlexBetween";
 import profileImage from "../assets/profile.jpeg";
 
-function Navbar() {
+function Navbar({ isSidebarOpen, setIsSidebarOpen }) {
   const dispatch = useDispatch();
   const theme = useTheme();
   const palette = theme.palette;
@@ -21,7 +21,7 @@ function Navbar() {
       <Toolbar sx={{ justifyContent: "space-between" }}>
         {/* Left Side */}
         <FlexBetween>
-          <IconButton onClick={() => console.log("open sidebar")}>
+          <IconButton onClick={() => setIsSidebarOpen((prev) => !prev)}>
             <MenuIcon />
           </IconButton>
           <FlexBetween backgroundColor={palette.background.alt} borderRadius="9px" gap="3rem" p="0.1rem 1.5rem">
