@@ -52,7 +52,7 @@ mongoose
   .then(() => {
     app.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
     // User.insertMany(dataUser);
-    Product.insertMany(dataProduct);
-    ProductStat.insertMany(dataProductStat);
+    // Product.insertMany(dataProduct);
+    // ProductStat.insertMany(dataProductStat);
   })
   .catch((error) => console.log(`Error: ${error} . Did not connect`));

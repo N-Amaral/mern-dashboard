@@ -4,19 +4,19 @@ const ProductStatSchema = new Schema(
   {
     productId: {
       type: String,
-      required: true,
+      // required: true,
     },
     yearlySalesTotal: {
       type: Number,
-      required: true,
+      // required: true,
     },
     yearlyTotalSoldUnits: {
       type: Number,
-      required: true,
+      // required: true,
     },
     year: {
       type: Number,
-      required: true,
+      // required: true,
     },
     monthlyData: [
       {

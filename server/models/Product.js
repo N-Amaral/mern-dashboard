@@ -4,27 +4,27 @@ const ProductSchema = new Schema(
   {
     name: {
       type: String,
-      required: true,
+      // required: true,
     },
     price: {
       type: Number,
-      required: true,
+      // required: true,
     },
     description: {
       type: String,
-      required: true,
+      // required: true,
     },
     category: {
       type: String,
-      required: true,
+      // required: true,
     },
     rating: {
       type: Number,
-      required: true,
+      // required: true,
     },
     supply: {
       type: Number,
-      required: true,
+      // required: true,
     },
   },
   { timestamps: true }
